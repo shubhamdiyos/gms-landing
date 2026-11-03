@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMS — Global School Management System | One System for the Whole School</title>
+  <meta name="description" content="GMS is a complete school management platform with role-based dashboards for admin, teachers, students, parents and staff — replacing registers, spreadsheets and WhatsApp chaos.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="GMS home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </span>
+        <span class="brand-copy">
+          <strong>GMS</strong>
+          <small>Global School Management System</small>
+        </span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#problem">The problem</a>
+        <a href="#roles">Five roles</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#built">Built by Bytencia</a>
+      </nav>
+
+      <a class="btn btn-small btn-primary nav-cta" href="https://gms-react.vercel.app/login" target="_blank" rel="noopener">See the live product</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A complete SaaS platform for schools</p>
+          <h1 id="hero-title">One system for the <span>whole school.</span></h1>
+          <p class="hero-lead">
+            GMS brings attendance, records and everyday updates into one role-based platform — so the school day
+            stops living across paper registers, disconnected spreadsheets and endless WhatsApp threads.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://gms-react.vercel.app/login" target="_blank" rel="noopener">
+              See the live product <span aria-hidden="true">↗</span>
+            </a>
+            <a class="btn btn-light" href="https://bytencia.vercel.app/" target="_blank" rel="noopener">
+              Get this for your school
+            </a>
+          </div>
+          <ul class="hero-facts" aria-label="GMS highlights">
+            <li>Five role-based dashboards</li>
+            <li>Records entered once</li>
+            <li>Built for high-volume school data</li>
+          </ul>
+        </div>
+
+        <div class="dashboard-scene reveal" aria-label="Illustration of the GMS school dashboard">
+          <div class="dashboard-window">
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="window-title">GMS — school operations</span>
+              <span class="live-pill">Dashboard view</span>
+            </div>
+            <div class="dashboard-body">
+              <aside class="dashboard-sidebar" aria-hidden="true">
+                <div class="side-logo">G</div>
+                <span class="side-item active">Overview</span>
+                <span class="side-item">Admin</span>
+                <span class="side-item">Teacher</span>
+                <span class="side-item">Student</span>
+                <span class="side-item">Parent</span>
+                <span class="side-item">Staff</span>
+              </aside>
+              <div class="dashboard-main">
+                <div class="dash-heading">
+                  <div>
+                    <small>Good morning</small>
+                    <strong>The whole school, at a glance.</strong>
+                  </div>
+                  <span class="sync-badge">One record</span>
+                </div>
+                <div class="dash-cards">
+                  <article class="dash-card accent-blue">
+                    <span>Attendance</span>
+                    <strong>Marked &amp; visible</strong>
+                    <div class="mini-bars" aria-hidden="true"><i style="--h:42%"></i><i style="--h:68%"></i><i style="--h:54%"></i><i style="--h:82%"></i><i style="--h:72%"></i></div>
+                  </article>
+                  <article class="dash-card accent-teal">
+                    <span>Activity</span>
+                    <strong>Across every role</strong>
+                    <div class="activity-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+                  </article>
+                  <article class="dash-card accent-amber">
+                    <span>Records</span>
+                    <strong>Entered once</strong>
+                    <div class="record-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+                  </article>
+                  <article class="dash-card accent-violet">
+                    <span>Updates</span>
+                    <strong>Inside the system</strong>
+                    <div class="update-chip">No WhatsApp chasing</div>
+                  </article>
+                </div>
+                <div class="day-board" aria-hidden="true">
+                  <div class="day-board-head">
+                    <span>School day board</span>
+                    <span>Admin · Teacher · Student · Parent · Staff</span>
+                  </div>
+                  <div class="timetable-grid">
+                    <span class="slot slot-a">Attendance</span>
+                    <span class="slot slot-b">Records</span>
+                    <span class="slot slot-c">Updates</span>
+                    <span class="slot slot-d">Activity</span>
+                    <span class="slot slot-e">Permissions</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-note note-one">
+            <strong>Entered once</strong>
+            <span>Consistent records, without re-typing the same data.</span>
+          </div>
+          <div class="floating-note note-two">
+            <strong>The right view for every role</strong>
+            <span>Each login sees what it needs — and nothing it shouldn’t.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem-section" id="problem" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">The problem</p>
+          <h2 id="problem-title">A school should not run on five versions of the truth.</h2>
+          <p>
+            When every record lives somewhere different, even simple questions take too long to answer.
+            Admin teams re-enter the same information, parents chase basic updates, and leadership has
+            no single view of what is actually happening.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <span class="problem-number">01</span>
+            <div class="paper-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <h3>Attendance is in a register</h3>
+            <p>The day begins on paper, separated from the rest of the school’s information.</p>
+          </article>
+          <article class="problem-card reveal">
+            <span class="problem-number">02</span>
+            <div class="sheet-icon" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <h3>Fees and marks are in other files</h3>
+            <p>Important records sit in separate spreadsheets that do not agree with each other.</p>
+          </article>
+          <article class="problem-card reveal">
+            <span class="problem-number">03</span>
+            <div class="chat-icon" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Updates scatter across WhatsApp</h3>
+            <p>Parents chase teachers for basic information while routine updates disappear into threads.</p>
+          </article>
+          <article class="problem-card reveal">
+            <span class="problem-number">04</span>
+            <div class="report-icon" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>Every report becomes manual work</h3>
+            <p>Someone has to stop real work, gather the files and compile the picture by hand.</p>
+          </article>
+        </div>
+
+        <div class="replace-panel reveal" aria-labelledby="replace-title">
+          <div class="replace-intro">
+            <p class="section-kicker">What GMS replaces</p>
+            <h3 id="replace-title">Replace the patchwork, not the people.</h3>
+            <p>GMS takes the fragmented routine work and gives it one connected home.</p>
+          </div>
+          <div class="replace-list">
+            <div class="replace-row">
+              <span>Paper registers</span><span class="replace-arrow" aria-hidden="true">→</span>
+              <strong>Attendance and day-to-day records in one system</strong>
+            </div>
+            <div class="replace-row">
+              <span>Disconnected spreadsheets</span><span class="replace-arrow" aria-hidden="true">→</span>
+              <strong>Information entered once and kept consistent</strong>
+            </div>
+            <div class="replace-row">
+              <span>WhatsApp chasing</span><span class="replace-arrow" aria-hidden="true">→</span>
+              <strong>Routine updates handled inside the platform</strong>
+            </div>
+            <div class="replace-row">
+              <span>Manual report compiling</span><span class="replace-arrow" aria-hidden="true">→</span>
+              <strong>A whole-school view from one dashboard</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roles-section" id="roles" aria-labelledby="roles-title">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="section-kicker">Five role-based experiences</p>
+          <h2 id="roles-title">Everyone gets their own door into the same school.</h2>
+          <p>
+            Admin, Teacher, Student, Parent and Staff each receive a dedicated login, dashboard and
+            permissions — one shared system, shaped around the person using it.
+          </p>
+        </div>
+
+        <div class="roles-grid">
+          <article class="role-card role-admin reveal" tabindex="0">
+            <div class="role-top"><span class="role-icon">A</span><span class="role-label">Leadership view</span></div>
+            <h3>Admin</h3>
+            <p>See attendance, activity and school operations at a glance, without asking five people for five different files.</p>
+            <ul>
+              <li>Whole-school dashboard</li>
+              <li>Role-based access control</li>
+              <li>Consistent records</li>
+            </ul>
+          </article>
+
+          <article class="role-card role-teacher reveal" tabindex="0">
+            <div class="role-top"><span class="role-icon">T</span><span class="role-label">Classroom view</span></div>
+            <h3>Teacher</h3>
+            <p>Work with attendance and day-to-day records in the same system, instead of splitting the day across paper and messages.</p>
+            <ul>
+              <li>Own login and dashboard</li>
+              <li>Attendance in the system</li>
+              <li>Routine updates connected</li>
+            </ul>
+          </article>
+
+          <article class="role-card role-student reveal" tabindex="0">
+            <div class="role-top"><span class="role-icon">S</span><span class="role-label">Personal view</span></div>
+            <h3>Student</h3>
+            <p>Open a focused dashboard built around the student’s own school experience, with access limited to what they need.</p>
+            <ul>
+              <li>Own login and dashboard</li>
+              <li>Focused school view</li>
+              <li>Clear role permissions</li>
+            </ul>
+          </article>
+
+          <article class="role-card role-parent reveal" tabindex="0">
+            <div class="role-top"><span class="role-icon">P</span><span class="role-label">Family view</span></div>
+            <h3>Parent</h3>
+            <p>Receive a clearer route to basic school updates, without chasing teachers through scattered WhatsApp threads.</p>
+            <ul>
+              <li>Own login and dashboard</li>
+              <li>Updates inside the system</li>
+              <li>Access shaped for parents</li>
+            </ul>
+          </article>
+
+          <article class="role-card role-staff reveal" tabindex="0">
+            <div class="role-top"><span class="role-icon">S</span><span class="role-label">Operations view</span></div>
+            <h3>Staff</h3>
+            <p>Keep day-to-day records in one place and reduce the repeated data entry created by disconnected files.</p>
+            <ul>
+              <li>Own login and dashboard</li>
+              <li>Shared, consistent records</li>
+              <li>Less manual re-entry</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section capabilities-section" id="capabilities" aria-labelledby="capabilities-title">
+      <div class="container capabilities-layout">
+        <div class="capabilities-copy reveal">
+          <p class="section-kicker light">Key capabilities</p>
+          <h2 id="capabilities-title">Automation where the chaos was.</h2>
+          <p>
+            GMS is not another file to maintain. It is the working system underneath the school day —
+            connecting the records, dashboards and updates that used to live apart.
+          </p>
+          <a class="text-link" href="https://gms-react.vercel.app/login" target="_blank" rel="noopener">Explore the live product <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="capability-list">
+          <article class="capability-card reveal">
+            <span class="capability-icon" aria-hidden="true">◦</span>
+            <div>
+              <h3>Smart dashboards</h3>
+              <p>Attendance, activity and operations visible at a glance instead of buried in files.</p>
+            </div>
+          </article>
+          <article class="capability-card reveal">
+            <span class="capability-icon" aria-hidden="true">✓</span>
+            <div>
+              <h3>Role-based permissions</h3>
+              <p>Every user type sees exactly what it needs — and nothing it shouldn’t.</p>
+            </div>
+          </article>
+          <article class="capability-card reveal">
+            <span class="capability-icon" aria-hidden="true">↻</span>
+            <div>
+              <h3>Routine work, handled by the system</h3>
+              <p>Attendance, updates and day-to-day records move out of registers, spreadsheets and message threads.</p>
+            </div>
+          </article>
+          <article class="capability-card reveal">
+            <span class="capability-icon" aria-hidden="true">▦</span>
+            <div>
+              <h3>Built for real-world volume</h3>
+              <p>Engineered to handle massive, high-volume school data to a production standard.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section built-section" id="built" aria-labelledby="built-title">
+      <div class="container built-panel reveal">
+        <div class="built-copy">
+          <p class="section-kicker">Built, not mocked up</p>
+          <h2 id="built-title">Designed and built by a senior software engineer.</h2>
+          <p>
+            GMS is a working portfolio product from Bytencia. Explore the live system, or inspect the
+            codebase behind the platform.
+          </p>
+          <div class="built-actions">
+            <a class="btn btn-dark" href="https://gms-react.vercel.app/login" target="_blank" rel="noopener">Open the live product</a>
+            <a class="btn btn-outline" href="https://github.com/shubhamdiyos/gms" target="_blank" rel="noopener">Read the code <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="code-card" aria-label="Project links summary">
+          <div class="code-card-head"><span></span><span></span><span></span><strong>GMS / project</strong></div>
+          <div class="code-line"><span>product</span><strong>Global School Management System</strong></div>
+          <div class="code-line"><span>experiences</span><strong>Admin · Teacher · Student · Parent · Staff</strong></div>
+          <div class="code-line"><span>focus</span><strong>Dashboards · Records · Updates · Automation</strong></div>
+          <div class="code-line"><span>status</span><strong class="status-live">Live product + public code</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container cta-panel reveal">
+        <div>
+          <p class="section-kicker light">For schools ready to simplify</p>
+          <h2 id="cta-title">Bring the whole school into one system.</h2>
+          <p>Start with the live product, then talk to Bytencia about a system shaped around your school.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="https://gms-react.vercel.app/login" target="_blank" rel="noopener">See the live product</a>
+          <a class="btn btn-light" href="https://bytencia.vercel.app/" target="_blank" rel="noopener">Get this for your school</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#top" aria-label="Back to top">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span class="brand-copy"><strong>GMS</strong><small>Global School Management System</small></span>
+        </a>
+        <p>A Bytencia portfolio product page for the Global School Management System.</p>
+      </div>
+      <div>
+        <h3>Product</h3>
+        <a href="https://gms-react.vercel.app/login" target="_blank" rel="noopener">Live product</a>
+        <a href="https://github.com/shubhamdiyos/gms" target="_blank" rel="noopener">GitHub repository</a>
+        <a href="#roles">Five role experiences</a>
+      </div>
+      <div>
+        <h3>Talk to Bytencia</h3>
+        <a href="https://www.instagram.com/bytencia/" target="_blank" rel="noopener">DM “START” on Instagram — @bytencia</a>
+        <a href="mailto:contact@bytencia.com">contact@bytencia.com</a>
+        <a href="https://bytencia.vercel.app/" target="_blank" rel="noopener">bytencia.vercel.app</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Bytencia. GMS product page.</span>
+      <span>One system. Five roles. No register-and-spreadsheet patchwork.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
